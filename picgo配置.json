@@ -1,0 +1,51 @@
+{
+  "debug": true,
+  "PICGO_ENV": "GUI",
+  "settings": {
+    "shortKey": {
+      "picgo:upload": {
+        "enable": true,
+        "key": "CommandOrControl+Shift+P",
+        "name": "upload",
+        "label": "快捷上传"
+      }
+    },
+    "privacyEnsure": true,
+    "showUpdateTip": false,
+    "server": {
+      "port": 36677,
+      "host": "127.0.0.1",
+      "enable": true
+    },
+    "autoStart": false,
+    "checkBetaUpdate": false
+  },
+  "needReload": false,
+  "picBed": {
+    "current": "github",
+    "uploader": "github",
+    "smms": {
+      "token": ""
+    },
+    "list": [
+      {
+        "name": "GitHub图床",
+        "type": "github",
+        "visible": true
+      }
+    ],
+    "github": {
+      "branch": "main",
+      "customUrl": "",
+      "path": "img/",
+      "repo": "susanforme/img",
+      "token": "*****"
+    }
+  },
+  "picgoPlugins": {
+    "picgo-plugin-rename-file": true
+  },
+  "picgo-plugin-rename-file": {
+    "format": "{y}/{m}/{d}/{h}时{i}分{s}秒{hash}-{origin}-{rand:6}"
+  }
+}

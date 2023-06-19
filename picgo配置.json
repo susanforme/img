@@ -1,47 +1,75 @@
 {
-  "debug": true,
-  "PICGO_ENV": "GUI",
-  "settings": {
-    "shortKey": {
-      "picgo:upload": {
-        "enable": true,
-        "key": "CommandOrControl+Shift+P",
-        "name": "upload",
-        "label": "快捷上传"
-      }
-    },
-    "privacyEnsure": true,
-    "showUpdateTip": false,
-    "server": {
-      "port": 36677,
-      "host": "127.0.0.1",
-      "enable": true
-    },
-    "autoStart": false,
-    "checkBetaUpdate": false
-  },
-  "needReload": false,
   "picBed": {
     "current": "github",
     "uploader": "github",
     "smms": {
       "token": ""
     },
+    "github": {
+      "repo": "susanforme/img",
+      "branch": "main",
+      "token": "********************",
+      "path": "",
+      "customUrl": ""
+    },
     "list": [
       {
-        "name": "GitHub图床",
+        "type": "tcyun",
+        "name": "腾讯云COS",
+        "visible": false
+      },
+      {
+        "type": "aliyun",
+        "name": "阿里云OSS",
+        "visible": false
+      },
+      {
+        "type": "smms",
+        "name": "SM.MS",
+        "visible": false
+      },
+      {
         "type": "github",
+        "name": "GitHub",
         "visible": true
+      },
+      {
+        "type": "qiniu",
+        "name": "七牛云",
+        "visible": false
+      },
+      {
+        "type": "imgur",
+        "name": "Imgur",
+        "visible": false
+      },
+      {
+        "type": "upyun",
+        "name": "又拍云",
+        "visible": false
       }
     ],
-    "github": {
-      "branch": "main",
-      "customUrl": "",
-      "path": "img/",
-      "repo": "susanforme/img",
-      "token": "*****"
-    }
+    "proxy": "http://127.0.0.1:11000"
   },
+  "settings": {
+    "shortKey": {
+      "picgo:upload": {
+        "enable": true,
+        "key": "CommandOrControl+Shift+P",
+        "name": "upload",
+        "label": "QUICK_UPLOAD"
+      }
+    },
+    "showUpdateTip": false,
+    "privacyEnsure": true,
+    "autoStart": true,
+    "rename": false,
+    "proxy": "http://127.0.0.1:11000",
+    "registry": "",
+    "pasteStyle": "markdown",
+    "checkBetaUpdate": false
+  },
+  "needReload": false,
   "picgoPlugins": {
     "picgo-plugin-rename-file": true
   },
